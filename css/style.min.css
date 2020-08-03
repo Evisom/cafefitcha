@@ -7585,7 +7585,8 @@ html:lang(vn) {
     font-family: "gerbera";
     font-weight: 400;
     margin-bottom: 40px;
-    font-size: 52px; }
+    font-size: 52px;
+    font-weight: 500; }
     @media (max-width: 767px) {
       .scene.scene__landing-beauty .header__text--header {
         font-size: 32px;
@@ -7716,7 +7717,8 @@ html:lang(vn) {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.5px;
-    margin-top: 24px; }
+    margin-top: 24px;
+    font-weight: 500; }
     @media (max-width: 767px) {
       .scene.scene__landing-beauty .lb-advantages-element-title {
         margin-top: 16px;
@@ -7784,7 +7786,8 @@ html:lang(vn) {
     flex-direction: row-reverse; }
   .scene.scene__landing-beauty .lb-cards-element-photo {
     width: 50%;
-    height: auto; }
+    height: auto;
+    z-index: 1; }
     @media (max-width: 767px) {
       .scene.scene__landing-beauty .lb-cards-element-photo {
         width: 100%;
@@ -7794,7 +7797,6 @@ html:lang(vn) {
   .scene.scene__landing-beauty .lb-cards-element-info {
     width: 50%;
     height: auto;
-    background: #FDF4B7;
     padding-top: 80px;
     padding-left: 90px;
     padding-right: 90px;
@@ -7808,11 +7810,21 @@ html:lang(vn) {
         padding-left: 22px;
         padding-right: 22px;
         padding-bottom: 24px; } }
+    .scene.scene__landing-beauty .lb-cards-element-info-yellow {
+      background: #FDF4B7; }
+    .scene.scene__landing-beauty .lb-cards-element-info-pink {
+      background: #FBD9EB; }
+    .scene.scene__landing-beauty .lb-cards-element-info-blue {
+      background: #E4F8FF; }
+    .scene.scene__landing-beauty .lb-cards-element-info-gray {
+      background: #F4F2EE; }
   .scene.scene__landing-beauty .lb-cards-element-info-title {
     font-size: 32px;
     line-height: 40px;
     color: #0B276F;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    font-weight: 500;
+    max-width: 405px; }
     @media (max-width: 767px) {
       .scene.scene__landing-beauty .lb-cards-element-info-title {
         font-size: 24px;
@@ -7845,7 +7857,7 @@ html:lang(vn) {
   .scene.scene__landing-beauty .lb-about-list-element {
     display: flex;
     flex-direction: row;
-    max-width: 779px;
+    max-width: 790px;
     margin: 0 auto;
     align-items: end;
     margin-bottom: 40px; }
@@ -7869,7 +7881,8 @@ html:lang(vn) {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.5px;
-    color: #0B276F; }
+    color: #0B276F;
+    font-weight: 100; }
     @media (max-width: 767px) {
       .scene.scene__landing-beauty .lb-about-list-element-text {
         font-size: 16px;
@@ -8194,8 +8207,8 @@ html:lang(vn) {
       .scene.scene__landing-beauty .lb-plans-container-element-seeall svg path {
         stroke: #D9D9D9; }
   .scene.scene__landing-beauty .spoiler.lessons-faq-spoiler {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important; }
+    padding-top: 28px !important;
+    padding-bottom: 28px !important; }
     .scene.scene__landing-beauty .spoiler.lessons-faq-spoiler * {
       color: #0B276F; }
   .scene.scene__landing-beauty .spoiler.lessons-type-spoiler, .scene.scene__landing-beauty .spoiler.lessons-faq-spoiler {
@@ -8217,9 +8230,9 @@ html:lang(vn) {
     justify-content: space-between;
     align-items: center; }
   .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 150%; }
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px; }
   .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler span, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler span {
     margin-right: 1px; }
   .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler span span, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler span span {
@@ -8227,7 +8240,13 @@ html:lang(vn) {
     margin-right: 4px; }
   @media (max-width: 768px) {
     .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler {
-      font-size: 16px; } }
+      font-size: 20px !important;
+      line-height: 130%;
+      letter-spacing: -0.5px;
+      text-align: left;
+      font-weight: 500; }
+      .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler span, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler span {
+        max-width: 260px; } }
   @media (max-width: 768px) {
     .scene.scene__landing-beauty .spoiler-title.lessons-type-spoiler, .scene.scene__landing-beauty .spoiler-title.lessons-faq-spoiler {
       font-size: 14px; } }
@@ -8236,11 +8255,18 @@ html:lang(vn) {
     font-size: 16px;
     line-height: 150%;
     display: none;
+    letter-spacing: -0.5px;
     width: calc( 100% - 30px); }
   .scene.scene__landing-beauty .lessons-faq-body-body {
-    font-size: 16px !important;
-    width: 90% !important;
-    text-align: left; }
+    font-size: 18px !important;
+    text-align: left;
+    font-weight: 100 !important;
+    max-width: 875px; }
+    @media (max-width: 767px) {
+      .scene.scene__landing-beauty .lessons-faq-body-body {
+        font-size: 16px !important;
+        line-height: 22px;
+        letter-spacing: -0.5px; } }
   @media (max-width: 768px) {
     .scene.scene__landing-beauty .spoiler-body.lessons-type-body, .scene.scene__landing-beauty .spoiler-body.lessons-faq-body-body {
       margin-top: 12px; } }
@@ -8275,49 +8301,18 @@ html:lang(vn) {
       background: #E4F8FF;
       margin-top: 48px;
       margin-bottom: 56px;
-      color: #0B276F; }
+      color: #0B276F;
+      font-weight: 500; }
       @media (max-width: 767px) {
         .scene.scene__landing-beauty .lb-faq .button {
           height: 49px;
           min-height: unset;
           margin-bottom: 24px; } }
-  .scene.scene__landing-beauty .lb-plans-container-hidden {
-    display: none; }
-  .scene.scene__landing-beauty .lb-plans-container-hidden.active {
-    display: block;
-    padding-top: 24px;
-    padding-left: 36px;
-    padding-right: 36px;
-    box-sizing: border-box;
-    position: absolute;
-    height: 640px;
-    box-shadow: 0px 30px 19px 15px rgba(0, 0, 0, 0.04);
-    z-index: 2;
-    overflow-y: scroll;
-    width: 100%;
-    left: 0;
-    right: 0;
-    bottom: -640px;
-    background: white; }
   .scene.scene__landing-beauty .lb-plans-container-element {
     position: relative;
     z-index: 2; }
   .scene.scene__landing-beauty .lb-plans {
     z-index: 2; }
-  .scene.scene__landing-beauty .lb-plans-container-hidden-link {
-    color: #0088B8;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 16px;
-    text-decoration: none;
-    display: block; }
-  .scene.scene__landing-beauty .lb-plans-container-hidden-title {
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    letter-spacing: -0.5px;
-    color: #0B276F; }
   .scene.scene__landing-beauty .lb-set-popup-wrapper.active {
     position: fixed;
     background: rgba(11, 39, 111, 0.8);
@@ -8331,12 +8326,16 @@ html:lang(vn) {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .scene.scene__landing-beauty .lb-set-popup-wrapper.active .lb-set-popup {
+      z-index: 999;
+      position: relative; }
   .scene.scene__landing-beauty .lb-set-popup {
     height: 545px;
     width: 900px;
     background: white;
     margin: auto;
-    position: relative; }
+    position: fixed;
+    z-index: -1; }
     .scene.scene__landing-beauty .lb-set-popup .flickity-page-dots {
       bottom: 50px;
       height: 8px;
@@ -8433,6 +8432,58 @@ html:lang(vn) {
     margin-top: 32px;
     letter-spacing: -0.5px;
     color: #828282; }
+  .scene.scene__landing-beauty .info-line .share-block__title {
+    color: #949494; }
+  .scene.scene__landing-beauty .info-line .copy-link {
+    color: #d6d6d6; }
+  .scene.scene__landing-beauty .info-line .auth-block {
+    color: #a7a7a7; }
+    .scene.scene__landing-beauty .info-line .auth-block a {
+      color: #a7a7a7; }
+  .scene.scene__landing-beauty .info-line path {
+    fill: #d6d6d6; }
+  .scene.scene__landing-beauty .fitcha-logo {
+    margin-bottom: 12px; }
+    .scene.scene__landing-beauty .fitcha-logo svg {
+      width: 215px; }
+    .scene.scene__landing-beauty .fitcha-logo span {
+      font-size: 15px;
+      padding: 2px 8px 3px 8px;
+      bottom: -8px; }
+    @media (max-width: 767px) {
+      .scene.scene__landing-beauty .fitcha-logo svg {
+        width: 145px; } }
+  .scene.scene__landing-beauty #sw-logo g path:last-child {
+    fill: #00AEEF;
+    stroke: #00AEEF; }
+  .scene.scene__landing-beauty .top.top_dark-blue .navigation__link svg {
+    stroke: #00AEEF; }
+  .scene.scene__landing-beauty .navigation {
+    margin-left: 80px;
+    margin-right: auto; }
+  .scene.scene__landing-beauty .navigation__link span {
+    color: #0B276F; }
+  .scene.scene__landing-beauty .top_less .navigation__link span, .scene.scene__landing-beauty .top_open .navigation__link span {
+    color: white !important; }
+  @media (max-width: 767px) {
+    .scene.scene__landing-beauty .top {
+      padding: 16px 0; }
+    .scene.scene__landing-beauty .top_less .mobile-menu a svg rect {
+      fill: white; } }
+  .scene.scene__landing-beauty .lb-cards-element-info-subtext {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    color: #828282;
+    position: absolute;
+    bottom: 53px;
+    left: 79px; }
+    @media (max-width: 767px) {
+      .scene.scene__landing-beauty .lb-cards-element-info-subtext {
+        display: none; } }
+  .scene.scene__landing-beauty .lb-cards-element-info {
+    position: relative; }
 
 .button_theme_green {
   background: #2BC78F;
