@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral:400,400i,800">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/libs.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+
+</head>
+<body>
+<div class="scene scene__landing-beauty">
+
+    <div class="top top_dark-blue">
+        <div class="wrapper">
+            <div class="fitcha-logo">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#fitcha-logo"></use>
+                    </svg>
+                    <span>Новый сезон</span>
+                </a>
+            </div>
+            <nav class="navigation">
+                <a class="navigation__link navigation__link_dropdown" href="#marathons">
+                    <span>Пойти на&nbsp;марафон</span>
+                    <svg width="12" height="7">
+                        <use xlink:href="images/sprite.svg#icon-chevron_down"></use>
+                    </svg>
+                </a>
+                <a class="navigation__link" href="#">
+                    <span>FAQ</span>
+                </a>
+                <a class="navigation__link navigation__link_dropdown" href="#journal">
+                    <span>Журнал</span>
+                    <svg width="12" height="7">
+                        <use xlink:href="images/sprite.svg#icon-chevron_down"></use>
+                    </svg>
+                </a>
+            </nav>
+            <div class="widget">
+                <ul class="widget__list">
+                    <!-- <li class="widget__item">
+                        <a class="widget__link" href="#">
+                            <svg width="18" height="18">
+                                <use xlink:href="images/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+                    </li> -->
+                    <li class="widget__item">
+                        <a class="widget__link" href="#">
+                            <svg width="16" height="16">
+                                <use xlink:href="images/sprite.svg#icon-user"></use>
+                            </svg>
+                            <span class="enter">Вход</span>
+                            <!-- <span class="username">Александр Дягтерев</span>
+                            <span class="exit">Выйти</span> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sw-logo">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="images/sprite.svg#sw-logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <a href="#">
+                    <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="2.375" rx="1.1875" fill="#0B276F"/>
+                        <rect y="8.3125" width="24" height="2.375" rx="1.1875" fill="#0B276F"/>
+                        <rect y="16.625" width="24" height="2.375" rx="1.1875" fill="#0B276F"/>
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+        <nav class="navigation-dropdown" id="marathons">
+            <div class="wrapper">
+                <a class="navigation__link" href="#">Перезапуск иммунитета</a>
+                <a class="navigation__link" href="#">Wellness-мама</a>
+                <a class="navigation__link" href="#">Большая чистка</a>
+                <a class="navigation__link" href="#">&laquo;На&nbsp;выход!&raquo;</a>
+                <a class="navigation__link" href="#">Detox PRO</a>
+            </div>
+        </nav>
+        <nav class="navigation-dropdown" id="journal">
+            <div class="wrapper">
+                <a class="navigation__link" href="#">Мнение эксперта</a>
+                <a class="navigation__link" href="#">Полезные факты</a>
+                <a class="navigation__link" href="#">Рецепты</a>
+                <a class="navigation__link" href="#">Сахарный зануда</a>
+            </div>
+        </nav>
+        <div class="top__overlay"></div>
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="header__text">
+
+                <div class="header__text--header">Beauty марафон</div>
+                <div class="header__text--desc">Узнай и научись использовать секреты профессионалов в сфере красоты
+                </div>
+                <div class="header__text-info">
+                    <div class="header__text-info-element">
+                        <img src="./images/clock.svg" alt="" class="header__text-info-element-ico">
+                        с 17 по 28 августа
+                    </div>
+                    <div class="header__text-info-element">
+                        <img src="./images/money.svg" alt="" class="header__text-info-element-ico">
+                        от 1 900 Руб.
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <a href="#" class="header__button button button_size_m button_theme_green">Выбрать набор и принять
+                        участие</a>
+                    <div class="header__actions__end">
+                        <div class="header__actions__end-title">До конца подачи заявки</div>
+                        <div class="header__actions__end-counter">
+                            <div class="header__actions__end-counter-element">
+                                <div class="header__actions__end-counter-element-number">05</div>
+                                <div class="header__actions__end-counter-element-type">д</div>
+                            </div>
+                            <div class="header__actions__end-counter-element">
+                                <div class="header__actions__end-counter-element-number">08</div>
+                                <div class="header__actions__end-counter-element-type">ч</div>
+                            </div>
+                            <div class="header__actions__end-counter-element">
+                                <div class="header__actions__end-counter-element-number">28</div>
+                                <div class="header__actions__end-counter-element-type">мин</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="lb-advantages">
+        <div class="wrapper">
+            <div class="lb-advantages-element">
+                <img src="./images/lb-advantages.svg" alt="" class="lb-advantages-element-ico">
+                <div class="lb-advantages-element-title">100% результат</div>
+                <div class="lb-advantages-element-text">Порядок в голове и косметичке! Избавляйся от того, что не
+                    работает, добавляй полезное, выстраивай индивидуальную систему ухода
+                </div>
+            </div>
+            <div class="lb-advantages-element">
+                <img src="./images/lb-advantages.svg" alt="" class="lb-advantages-element-ico">
+                <div class="lb-advantages-element-title">100% результат</div>
+                <div class="lb-advantages-element-text">Порядок в голове и косметичке! Избавляйся от того, что не
+                    работает, добавляй полезное, выстраивай индивидуальную систему ухода
+                </div>
+            </div>
+            <div class="lb-advantages-element">
+                <img src="./images/lb-advantages.svg" alt="" class="lb-advantages-element-ico">
+                <div class="lb-advantages-element-title">100% результат</div>
+                <div class="lb-advantages-element-text">Порядок в голове и косметичке! Избавляйся от того, что не
+                    работает, добавляй полезное, выстраивай индивидуальную систему ухода
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lb-cards-container">
+        <div class="lb-cards-element">
+            <img src="./images/lb-cards.png" class="lb-cards-element-photo"></img>
+            <div class="lb-cards-element-info">
+                <div class="lb-cards-element-info-title">
+                    Сам себе косметолог
+                </div>
+                <div class="lb-cards-element-info-text">
+                    За 10 дней марафона ты станешь экспертом в сфере красоты, разложишь по полочкам и улучшишь знания в области косметических продуктов и ухода за кожей лица. Бонус! Научишься подбирать безопасную и эффективную косметику себе и другим. В финале курса ты получишь сертификат, подтверждающий новые знания.
+                </div>
+            </div>
+        </div>
+        <div class="lb-cards-element">
+            <img src="./images/lb-cards.png" class="lb-cards-element-photo"></img>
+            <div class="lb-cards-element-info">
+                <div class="lb-cards-element-info-title">
+                    Сам себе косметолог
+                </div>
+                <div class="lb-cards-element-info-text">
+                    За 10 дней марафона ты станешь экспертом в сфере красоты, разложишь по полочкам и улучшишь знания в области косметических продуктов и ухода за кожей лица. Бонус! Научишься подбирать безопасную и эффективную косметику себе и другим. В финале курса ты получишь сертификат, подтверждающий новые знания.
+                </div>
+            </div>
+        </div>
+        <div class="lb-cards-element">
+            <img src="./images/lb-cards.png" class="lb-cards-element-photo"></img>
+            <div class="lb-cards-element-info">
+                <div class="lb-cards-element-info-title">
+                    Сам себе косметолог
+                </div>
+                <div class="lb-cards-element-info-text">
+                    За 10 дней марафона ты станешь экспертом в сфере красоты, разложишь по полочкам и улучшишь знания в области косметических продуктов и ухода за кожей лица. Бонус! Научишься подбирать безопасную и эффективную косметику себе и другим. В финале курса ты получишь сертификат, подтверждающий новые знания.
+                </div>
+            </div>
+        </div>
+        <div class="lb-cards-element">
+            <img src="./images/lb-cards.png" class="lb-cards-element-photo"></img>
+            <div class="lb-cards-element-info">
+                <div class="lb-cards-element-info-title">
+                    Сам себе косметолог
+                </div>
+                <div class="lb-cards-element-info-text">
+                    За 10 дней марафона ты станешь экспертом в сфере красоты, разложишь по полочкам и улучшишь знания в области косметических продуктов и ухода за кожей лица. Бонус! Научишься подбирать безопасную и эффективную косметику себе и другим. В финале курса ты получишь сертификат, подтверждающий новые знания.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lb-about">
+        <div class="wrapper">
+            <div class="lb-about-title">
+                О чем будем говорить на beauty-марафоне?
+            </div>
+            <div class="lb-about-list">
+                <div class="lb-about-list-element">
+                    <div class="lb-about-list-element-ico">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="#2BC78F"/>
+                            <path d="M10.5557 19.9052L16.3237 25.7408L28.1483 13.7778" stroke="white" stroke-width="3"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="lb-about-list-element-text">
+                        Как определить тип кожи и биологический возраст? Какие бывают причины старения?
+                    </div>
+                </div>
+                <div class="lb-about-list-element">
+                    <div class="lb-about-list-element-ico">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="#2BC78F"/>
+                            <path d="M10.5557 19.9052L16.3237 25.7408L28.1483 13.7778" stroke="white" stroke-width="3"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="lb-about-list-element-text">
+                        Как определить тип кожи и биологический возраст? Какие бывают причины старения?
+                    </div>
+                </div>
+                <div class="lb-about-list-element">
+                    <div class="lb-about-list-element-ico">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="#2BC78F"/>
+                            <path d="M10.5557 19.9052L16.3237 25.7408L28.1483 13.7778" stroke="white" stroke-width="3"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="lb-about-list-element-text">
+                        Как определить тип кожи и биологический возраст? Какие бывают причины старения?
+                    </div>
+                </div>
+                <div class="lb-about-list-element">
+                    <div class="lb-about-list-element-ico">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="#2BC78F"/>
+                            <path d="M10.5557 19.9052L16.3237 25.7408L28.1483 13.7778" stroke="white" stroke-width="3"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="lb-about-list-element-text">
+                        Как определить тип кожи и биологический возраст? Какие бывают причины старения?
+                    </div>
+                </div>
+                <div class="lb-about-list-element">
+                    <div class="lb-about-list-element-ico">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="19" cy="19" r="19" fill="#2BC78F"/>
+                            <path d="M10.5557 19.9052L16.3237 25.7408L28.1483 13.7778" stroke="white" stroke-width="3"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="lb-about-list-element-text">
+                        Как определить тип кожи и биологический возраст? Какие бывают причины старения?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper lb-quote-wrapper">
+        <div class="lb-quote">
+            <div class="lb-quote-title">12 лет практики и знаний эксперта
+                в одном марафоне
+            </div>
+            <div class="lb-quote-container">
+                <div class="lb-quote-container-text">
+                    <img src="./images/lb-quote-ico.png" alt="" class="lb-quote-container-text-ico">
+                    <div class="lb-quote-container-text-title">Самое главное – это удовольствие от своего внешнего вида.
+                        Это очень крутое ощущение – осознавать, что состояние внешности у тебя под контролем!
+                    </div>
+                    <div class="lb-quote-container-text-subtitle">Я хочу, чтобы каждая из нас могла качественно и
+                        эффективно ухаживать за кожей, поддерживать красоту и молодость. Поэтому я поделюсь своими
+                        знаниями и опытом на этом марафоне, чтобы и ты могла использовать эти знания, разложить по
+                        полочкам всю информацию об уходе и косметике, навести порядок в своей голове и на полке в
+                        ванной.
+                    </div>
+                </div>
+                <div class="lb-quote-container-info">
+                    <img src="./images/lb-quote-img.png" alt="" class="lb-quote-container-info-img">
+                    <div class="lb-quote-container-info-name">Мария Шестухина</div>
+                    <div class="lb-quote-container-info-job">Врач-дерматовенеролог, косметолог, сертифицированный
+                        тренер, член международной методической группы тренеров-косметологов
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="lb-plans">
+        <div class="lb-plans-title">Выбери свой план подписки на курс</div>
+        <div class="lb-plans-subtitle">Чтобы обучение было максимально эффективным мы уже подготовили разные наборы
+            ключевых продуктов, которые мы берем за эталон. Все продукты рабочие вне зависимости от стоимости.
+        </div>
+        <div class="lb-plans-container">
+            <div class="lb-plans-container-element">
+                <div class="lb-plans-container-element-name">Фея ухода</div>
+                <div class="lb-plans-container-element-price">910 ₽</div>
+                <a href="#" class="button  button_size_m">Купить курс</a>
+                <div class="lb-plans-container-element-advantages">
+                    <div class="lb-plans-container-element-advantages-r">
+                        <div class="lb-plans-container-element-advantages-r-ico">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.5L10 16.5L25 1.5" stroke="#2BC78F" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="lb-plans-container-element-advantages-r-text">Доступ ко всем материалам на
+                            постоянной основе
+                        </div>
+                    </div>
+                </div>
+                <div class="lb-plans-container-element-set">
+                    <span>В план входит набор</span>
+                    <a href="#">
+                        «Фея ухода»
+                    </a>
+                </div>
+                <img src="./images/lb-plans.png" alt="" class="lb-plans-container-element-img">
+                <div class="lb-plans-container-element-seeall" id="lbPlansTrigger">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1C16.5228 1 21 5.47715 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1Z"
+                            stroke="#00AEEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 15V11" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M11 7H11.01" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    Что в наборе?
+                </div>
+                <div class="lb-plans-container-hidden" id="lbPlans">
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <div class="lb-plans-container-hidden-title">Подарок (на выбор):</div>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+                    <a href="#" class="lb-plans-container-hidden-link">Напиток Young & Beauty</a>
+
+                </div>
+            </div>
+            <div class="lb-plans-container-element">
+                <div class="lb-plans-container-element-name">Фея ухода</div>
+                <div class="lb-plans-container-element-price">910 ₽</div>
+                <a href="#" class="button  button_size_m">Купить курс</a>
+                <div class="lb-plans-container-element-advantages">
+                    <div class="lb-plans-container-element-advantages-r">
+                        <div class="lb-plans-container-element-advantages-r-ico">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.5L10 16.5L25 1.5" stroke="#2BC78F" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="lb-plans-container-element-advantages-r-text">Доступ ко всем материалам на
+                            постоянной основе
+                        </div>
+                    </div>
+                    <div class="lb-plans-container-element-advantages-r">
+                        <div class="lb-plans-container-element-advantages-r-ico">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.5L10 16.5L25 1.5" stroke="#2BC78F" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="lb-plans-container-element-advantages-r-text">Доступ ко всем материалам на
+                            постоянной основе
+                        </div>
+                    </div>
+                    <div class="lb-plans-container-element-advantages-r">
+                        <div class="lb-plans-container-element-advantages-r-ico">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.5L10 16.5L25 1.5" stroke="#2BC78F" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="lb-plans-container-element-advantages-r-text">Доступ ко всем материалам на
+                            постоянной основе
+                        </div>
+                    </div>
+                </div>
+                <div class="lb-plans-container-element-set">
+                    <span>В план входит набор</span>
+                    <a href="#">
+                        «Фея ухода»
+                    </a>
+                </div>
+                <img src="./images/lb-plans.png" alt="" class="lb-plans-container-element-img">
+                <div class="lb-plans-container-element-seeall" id="lbPopupTrigger">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1C16.5228 1 21 5.47715 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1Z"
+                            stroke="#00AEEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 15V11" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M11 7H11.01" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    Что в наборе?
+                </div>
+            </div>
+            <div class="lb-plans-container-element">
+                <div class="lb-plans-container-element-name">Фея ухода</div>
+                <div class="lb-plans-container-element-price">910 ₽</div>
+                <a href="#" class="button  button_size_m">Купить курс</a>
+                <div class="lb-plans-container-element-advantages">
+                    <div class="lb-plans-container-element-advantages-r">
+                        <div class="lb-plans-container-element-advantages-r-ico">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 8.5L10 16.5L25 1.5" stroke="#2BC78F" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="lb-plans-container-element-advantages-r-text">Доступ ко всем материалам на
+                            постоянной основе
+                        </div>
+                    </div>
+                </div>
+                <div class="lb-plans-container-element-set">
+                    <span>В план входит набор</span>
+                    <a href="#">
+                        «Фея ухода»
+                    </a>
+                </div>
+                <img src="./images/lb-plans.png" alt="" class="lb-plans-container-element-img">
+                <div class="lb-plans-container-element-seeall">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1C16.5228 1 21 5.47715 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1Z"
+                            stroke="#00AEEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 15V11" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M11 7H11.01" stroke="#00AEEF" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    Что в наборе?
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lb-faq">
+        <div class="wrapper">
+            <div class="lib-faq-title">Вопросы и ответы</div>
+            <div class="spoiler lessons-faq-spoiler-first lessons-faq-spoiler">
+                <div class="spoiler-title lessons-faq-spoiler"><span>Что нужно для участия в марафоне?</span><img
+                    src="./images/lb-plus.svg"></div>
+                <div class="spoiler-body lessons-faq-body-body">Только ноутбук / компьютер / телефон с доступом в интернет. А ещё зеркало и приобретенные при регистрации косметические средства из стартового комплекта, чтобы попробовать и оценить полученные знания на практике.
+                </div>
+            </div>
+            <div class="spoiler lessons-faq-spoiler">
+                <div class="spoiler-title lessons-faq-spoiler"><span>Что нужно для участия в марафоне?</span><img
+                    src="./images/lb-plus.svg"></div>
+                <div class="spoiler-body lessons-faq-body-body">Только ноутбук / компьютер / телефон с доступом в интернет. А ещё зеркало и приобретенные при регистрации косметические средства из стартового комплекта, чтобы попробовать и оценить полученные знания на практике.
+                </div>
+            </div>
+            <div class="spoiler lessons-faq-spoiler">
+                <div class="spoiler-title lessons-faq-spoiler"><span>Что нужно для участия в марафоне?</span><img
+                    src="./images/lb-plus.svg"></div>
+                <div class="spoiler-body lessons-faq-body-body">Только ноутбук / компьютер / телефон с доступом в интернет. А ещё зеркало и приобретенные при регистрации косметические средства из стартового комплекта, чтобы попробовать и оценить полученные знания на практике.
+                </div>
+            </div>
+            <div class="spoiler lessons-faq-spoiler">
+                <div class="spoiler-title lessons-faq-spoiler"><span>Что нужно для участия в марафоне?</span><img
+                    src="./images/lb-plus.svg"></div>
+                <div class="spoiler-body lessons-faq-body-body">Только ноутбук / компьютер / телефон с доступом в интернет. А ещё зеркало и приобретенные при регистрации косметические средства из стартового комплекта, чтобы попробовать и оценить полученные знания на практике.
+                </div>
+            </div>
+            <div class="spoiler lessons-faq-spoiler">
+                <div class="spoiler-title lessons-faq-spoiler"><span>Что нужно для участия в марафоне?</span><img
+                    src="./images/lb-plus.svg"></div>
+                <div class="spoiler-body lessons-faq-body-body">Только ноутбук / компьютер / телефон с доступом в интернет. А ещё зеркало и приобретенные при регистрации косметические средства из стартового комплекта, чтобы попробовать и оценить полученные знания на практике.
+                </div>
+            </div>
+            <a href="#" class="button button_size_m">Показать больше вопросов</a>
+        </div>
+    </div>
+    <div class="info-line">
+
+        <div class="wrapper">
+
+            <div class="share-block">
+                <div class="share-block__title">Поделиться:</div>
+                <div class="share-block__list">
+                    <div class="share-block__yandex ya-share2 ya-share2_inited" data-url="123" data-title="324"
+                         data-description="432" data-image="eqwe">
+                        <div class="ya-share2__container ya-share2__container_size_m">
+                            <ul class="ya-share2__list ya-share2__list_direction_horizontal">
+                                <li class="ya-share2__item ya-share2__item_service_vkontakte"><a class="ya-share2__link"
+                                                                                                 href="https://vk.com/share.php?url=123&amp;title=324&amp;description=432&amp;image=eqwe&amp;utm_source=share2"
+                                                                                                 rel="nofollow noopener"
+                                                                                                 target="_blank"
+                                                                                                 title="ВКонтакте">
+                                    <svg class="social-svg-vkontakte" width="54" height="53"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52"
+                                                  rx="26"></rect>
+                                            <path
+                                                d="M39.368 29.346c-1.772-1.63-1.772-1.63-.035-3.858.313-.404.675-.868 1.082-1.405 2.698-3.566 2.81-4.744 2.565-5.427-.156-.426-.61-.937-1.898-.937 0 0 .259.016-5.268.042a1.67 1.67 0 0 0-.835.21c-.414.248-.645.712-.706.848-.849 2.244-3.181 6.394-4.1 6.792-.364-.417-.253-2.097-.177-3.229.148-2.232.317-4.761-1.594-5.217-1.348-.325-5.285-.413-6.605.232-.539.262-1.252.911-1.15 1.532l.158.564.505.065c.332.04.75.175.934.423.465.675.565 5.08.104 5.668-.856-.09-3.18-4.175-4.185-6.698-.036-.087-.233-.535-.622-.818-.41-.3-.917-.397-1.135-.424l-4.516.029c-.23.007-1.016.066-1.428.554-.456.535-.193 1.32-.12 1.507.146.327 3.618 8.06 7.644 12.219 3.44 3.552 6.851 3.452 9.38 3.475 1.724 0 1.943-.079 2.171-.325.474-.505.511-1.232.543-1.875.048-.972.131-1.295.563-1.43.334 0 1.167.956 1.664 1.528.615.707 1.252 1.436 1.95 1.912.998.68 1.856.782 2.278.782 0 0-.22-.008 4.452-.064.145-.008 1.433-.11 1.913-1.015.195-.369.317-.99-.226-1.885-.682-1.234-2.135-2.698-3.306-3.775z"
+                                                fill="#00B9F0"></path>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                                <li class="ya-share2__item ya-share2__item_service_facebook"><a class="ya-share2__link"
+                                                                                                href="https://www.facebook.com/sharer.php?src=sp&amp;u=123&amp;title=324&amp;description=432&amp;picture=eqwe&amp;utm_source=share2"
+                                                                                                rel="nofollow noopener"
+                                                                                                target="_blank"
+                                                                                                title="Facebook">
+                                    <svg class="social-svg-facebook" width="55" height="53"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(.882)" fill="none" fill-rule="evenodd">
+                                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52"
+                                                  rx="26"></rect>
+                                            <path
+                                                d="M35.044 21.859h-5.852v-2.546c0-1.197.814-1.476 1.387-1.476h4.097V12.57l-5.935-.017c-5.383 0-6.405 3.927-6.405 6.441v2.865h-4.113v5.344h4.113v16.034h6.856V27.203h5.28l.572-5.344z"
+                                                fill="#00B9F0"></path>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                                <li class="ya-share2__item ya-share2__item_service_twitter"><a class="ya-share2__link"
+                                                                                               href="https://twitter.com/intent/tweet?text=324&amp;url=123&amp;utm_source=share2"
+                                                                                               rel="nofollow noopener"
+                                                                                               target="_blank"
+                                                                                               title="Twitter">
+                                    <svg class="social-svg-twitter" width="54" height="53"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(.166)" fill="none" fill-rule="evenodd">
+                                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52"
+                                                  rx="26"></rect>
+                                            <path
+                                                d="M42.052 18.417c-1.067.478-1.967.494-2.922.02 1.232-.74 1.288-1.259 1.733-2.659a11.941 11.941 0 0 1-3.785 1.456 5.94 5.94 0 0 0-4.35-1.892c-3.292 0-5.96 2.682-5.96 5.986 0 .47.053.927.154 1.364-4.954-.249-9.345-2.633-12.284-6.255a5.99 5.99 0 0 0-.808 3.011 5.99 5.99 0 0 0 2.652 4.982 5.928 5.928 0 0 1-2.699-.748l-.001.075c0 2.9 2.055 5.319 4.782 5.87a5.957 5.957 0 0 1-2.693.102c.76 2.378 2.96 4.109 5.568 4.157a11.943 11.943 0 0 1-8.823 2.478 16.817 16.817 0 0 0 9.135 2.689c10.963 0 16.956-9.121 16.956-17.031 0-.26-.004-.516-.016-.775 1.163-.843 2.563-1.63 3.361-2.83"
+                                                fill="#00B9F0"></path>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                                <li class="ya-share2__item ya-share2__item_service_telegram"><a class="ya-share2__link"
+                                                                                                href="tg://msg_url?url=123&amp;text=324&amp;utm_source=share2"
+                                                                                                rel="nofollow"
+                                                                                                target="_blank"
+                                                                                                title="Telegram">
+                                    <svg class="social-svg-telegram" width="54" height="53"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="translate(.45)" fill="none" fill-rule="evenodd">
+                                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52"
+                                                  rx="26"></rect>
+                                            <path
+                                                d="M38.982 13.549l-5.191 24.845a.832.832 0 0 1-1.301.5l-7.087-5.12a1.176 1.176 0 0 0-1.429.04l-3.929 3.187a.831.831 0 0 1-1.317-.394l-2.729-8.73-7.048-2.618c-.716-.267-.722-1.272-.008-1.546L37.87 12.61a.83.83 0 0 1 1.112.94zm-6.919 4.493l-13.775 8.441a1.377 1.377 0 0 0-.606 1.553l1.49 5.207c.105.37.643.331.695-.05l.387-2.855c.073-.538.33-1.033.73-1.403L32.353 18.42c.213-.196-.042-.53-.29-.378z"
+                                                fill="#00B9F0" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </a></li>
+                                <li class="ya-share2__item ya-share2__item_service_link"><a href="#"
+                                                                                            class="copy-link"><span>Копировать ссылку</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="share-block__svg">
+                    <svg class="social-svg-vkontakte" width="54" height="53" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52" rx="26"></rect>
+                            <path
+                                d="M39.368 29.346c-1.772-1.63-1.772-1.63-.035-3.858.313-.404.675-.868 1.082-1.405 2.698-3.566 2.81-4.744 2.565-5.427-.156-.426-.61-.937-1.898-.937 0 0 .259.016-5.268.042a1.67 1.67 0 0 0-.835.21c-.414.248-.645.712-.706.848-.849 2.244-3.181 6.394-4.1 6.792-.364-.417-.253-2.097-.177-3.229.148-2.232.317-4.761-1.594-5.217-1.348-.325-5.285-.413-6.605.232-.539.262-1.252.911-1.15 1.532l.158.564.505.065c.332.04.75.175.934.423.465.675.565 5.08.104 5.668-.856-.09-3.18-4.175-4.185-6.698-.036-.087-.233-.535-.622-.818-.41-.3-.917-.397-1.135-.424l-4.516.029c-.23.007-1.016.066-1.428.554-.456.535-.193 1.32-.12 1.507.146.327 3.618 8.06 7.644 12.219 3.44 3.552 6.851 3.452 9.38 3.475 1.724 0 1.943-.079 2.171-.325.474-.505.511-1.232.543-1.875.048-.972.131-1.295.563-1.43.334 0 1.167.956 1.664 1.528.615.707 1.252 1.436 1.95 1.912.998.68 1.856.782 2.278.782 0 0-.22-.008 4.452-.064.145-.008 1.433-.11 1.913-1.015.195-.369.317-.99-.226-1.885-.682-1.234-2.135-2.698-3.306-3.775z"
+                                fill="#00B9F0"></path>
+                        </g>
+                    </svg>
+                    <svg class="social-svg-facebook" width="55" height="53" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(.882)" fill="none" fill-rule="evenodd">
+                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52" rx="26"></rect>
+                            <path
+                                d="M35.044 21.859h-5.852v-2.546c0-1.197.814-1.476 1.387-1.476h4.097V12.57l-5.935-.017c-5.383 0-6.405 3.927-6.405 6.441v2.865h-4.113v5.344h4.113v16.034h6.856V27.203h5.28l.572-5.344z"
+                                fill="#00B9F0"></path>
+                        </g>
+                    </svg>
+                    <svg class="social-svg-twitter" width="54" height="53" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(.166)" fill="none" fill-rule="evenodd">
+                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52" rx="26"></rect>
+                            <path
+                                d="M42.052 18.417c-1.067.478-1.967.494-2.922.02 1.232-.74 1.288-1.259 1.733-2.659a11.941 11.941 0 0 1-3.785 1.456 5.94 5.94 0 0 0-4.35-1.892c-3.292 0-5.96 2.682-5.96 5.986 0 .47.053.927.154 1.364-4.954-.249-9.345-2.633-12.284-6.255a5.99 5.99 0 0 0-.808 3.011 5.99 5.99 0 0 0 2.652 4.982 5.928 5.928 0 0 1-2.699-.748l-.001.075c0 2.9 2.055 5.319 4.782 5.87a5.957 5.957 0 0 1-2.693.102c.76 2.378 2.96 4.109 5.568 4.157a11.943 11.943 0 0 1-8.823 2.478 16.817 16.817 0 0 0 9.135 2.689c10.963 0 16.956-9.121 16.956-17.031 0-.26-.004-.516-.016-.775 1.163-.843 2.563-1.63 3.361-2.83"
+                                fill="#00B9F0"></path>
+                        </g>
+                    </svg>
+                    <svg class="social-svg-telegram" width="54" height="53" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(.45)" fill="none" fill-rule="evenodd">
+                            <rect stroke="#E8E8E8" x=".5" y=".5" width="52.266" height="52" rx="26"></rect>
+                            <path
+                                d="M38.982 13.549l-5.191 24.845a.832.832 0 0 1-1.301.5l-7.087-5.12a1.176 1.176 0 0 0-1.429.04l-3.929 3.187a.831.831 0 0 1-1.317-.394l-2.729-8.73-7.048-2.618c-.716-.267-.722-1.272-.008-1.546L37.87 12.61a.83.83 0 0 1 1.112.94zm-6.919 4.493l-13.775 8.441a1.377 1.377 0 0 0-.606 1.553l1.49 5.207c.105.37.643.331.695-.05l.387-2.855c.073-.538.33-1.033.73-1.403L32.353 18.42c.213-.196-.042-.53-.29-.378z"
+                                fill="#00B9F0" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="auth-block"><a href="#">Авторизуйся</a>, если зарегистрирован в SiberianWelness</div>
+
+        </div>
+
+    </div>
+    <div class="lb-set-popup-wrapper">
+        <div class="lb-set-popup">
+            <div class="lb-set-popup-title">
+                Набор «Фея ухода» <br> собери свой набор из лучших продуктов
+                <svg id="lbPopupClose" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4143 9.90201L15.6582 5.65815L14.2439 4.24394L10.0001 8.4878L5.75615 4.24385L4.34193 5.65807L8.58587 9.90201L4.34203 14.1459L5.75624 15.5601L10.0001 11.3162L14.2438 15.56L15.6581 14.1458L11.4143 9.90201Z" fill="white"/>
+                </svg>
+
+            </div>
+            <svg onclick="$('.lb-set-popup-slider-container').flickity( 'previous' )" class="lb-popup-control lb-popup-control-left" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                    <circle cx="40" cy="38" r="24" fill="white"/>
+                </g>
+                <path d="M42.4853 29.5147L34 38L42.4853 46.4853" stroke="#0B276F" stroke-width="3" stroke-linecap="round"/>
+                <defs>
+                    <filter id="filter0_d" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="8"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+            <svg onclick="$('.lb-set-popup-slider-container').flickity( 'next' )" class="lb-popup-control lb-popup-control-right" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                    <circle cx="40" cy="38" r="24" transform="rotate(-180 40 38)" fill="white"/>
+                </g>
+                <path d="M37.5147 46.4853L46 38L37.5147 29.5147" stroke="#0B276F" stroke-width="3" stroke-linecap="round"/>
+                <defs>
+                    <filter id="filter0_d" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="8"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+
+            <div class="lb-set-popup-slider-container">
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+                <div class="lb-set-popup-slider-container-element">
+                    <div  class="lb-set-popup-slider-container-img" >
+                        <img src="./images/lb-popup.png" alt="">
+                    </div>
+                    <div class="lb-set-popup-slider-container-title">Интеллектуальный крем</div>
+                    <div class="lb-set-popup-slider-container-subtitle">Выйди на новый уровень ухода за кожей с чудо-кремом от главных врачей</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/main.min.js"></script>
+<script>
+    window.onload = function () {
+        if ($(window).width() < 768) {
+            $('.lb-cards-container').flickity({
+                cellAlign: 'left',
+                contain: true,
+                pageDots: true,
+                prevNextButtons: false
+            })
+        }
+        if ($(window).width() < 1024) {
+            $('.lb-plans-container').flickity({
+                cellAlign: 'left',
+                contain: true,
+                pageDots: true,
+                prevNextButtons: false,
+            })
+        }
+        $('.spoiler-title').click(function(){
+            $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body')
+        })
+
+        $('html').click(function(e) {
+            if ( $("#lbPlans").hasClass("active")) {
+                if (e.target.class != 'lb-plans-container-element' && $(e.target).parents('.lb-plans-container-element').length == 0) {
+                    $("#lbPlans").removeClass("active")
+                }
+            }
+
+        });
+        $('.lb-set-popup-slider-container').flickity({
+            cellAlign: 'left',
+            contain: true,
+            pageDots: true,
+            prevNextButtons: false,
+            // groupCells: 4
+        })
+        $("#lbPlansTrigger").click(() => {
+            $("#lbPlans").addClass("active")
+        })
+
+        $("#lbPopupTrigger").click(() => {
+            $(".lb-set-popup-wrapper").addClass("active")
+        })
+        $("#lbPopupClose").click(() => {
+            $(".lb-set-popup-wrapper").removeClass("active")
+        })
+
+    }
+
+
+</script>
+</body>
+</html>

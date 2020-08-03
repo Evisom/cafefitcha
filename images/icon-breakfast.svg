@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>clock01 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="14.5" cy="14.5" r="14.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F-D-course" transform="translate(-229.000000, -562.000000)">
+            <g id="Group-19" transform="translate(184.000000, 503.000000)">
+                <g id="clock01-copy" transform="translate(47.000000, 61.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <circle stroke="#00274C" stroke-width="2" cx="14.5" cy="14.5" r="15.5"></circle>
+                    <rect id="Rectangle-53" fill="#FFFFFF" mask="url(#mask-2)" x="-3" y="-8" width="18" height="49"></rect>
+                    <polyline id="Line-4" stroke="#00274C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="14.5 6 14.5 16.4166667 8 20"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

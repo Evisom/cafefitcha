@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+
+	<defs>
+
+		<linearGradient id="silverGradient1" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0" stop-color="#93e5ea" />
+			<stop offset="1" stop-color="#77bac4" />
+		</linearGradient>
+
+		<linearGradient id="silverGradient2" x1="0" x2="0" y1="0" y2="1">
+			<stop offset="0" stop-color="#aef2f7" />
+			<stop offset="1" stop-color="#94dee8" />
+		</linearGradient>
+
+		<linearGradient id="ribbonGradientLeft" x1="0" x2="0" y1="0" y2="1" gradientTransform="rotate(67.5 0.5 0.5)">
+			<stop offset="0" stop-color="#35d0fb" />
+			<stop offset="1" stop-color="#2389ee" />
+		</linearGradient>
+
+		<linearGradient id="ribbonGradientRight" x1="0" x2="0" y1="0" y2="1" gradientTransform="rotate(-67.5 0.5 0.5)">
+			<stop offset="0" stop-color="#2389ee" />
+			<stop offset="1" stop-color="#35d0fb" />
+		</linearGradient>
+
+		<filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+			<feFlood flood-opacity="0.3" flood-color="#000" result="flood" />
+			<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" />
+			<feGaussianBlur in="composite1" stdDeviation="2" result="blur" />
+			<feOffset dx="0" dy="2" result="offset" />
+			<feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+		</filter>
+
+		<filter id="medalShadowOutside" x="-50%" y="-50%" width="200%" height="200%">
+			<feFlood flood-opacity="0.4" flood-color="#000" result="flood" />
+			<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" />
+			<feGaussianBlur in="composite1" stdDeviation="5" result="blur" />
+			<feOffset dx="0" dy="4" result="offset" />
+			<feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+		</filter>
+
+		<filter id="medalShadowInside" x="-50%" y="-50%" width="200%" height="200%">
+			<feFlood flood-opacity="0.3" flood-color="#000" result="flood" />
+			<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" />
+			<feGaussianBlur in="composite1" stdDeviation="4" result="blur" />
+			<feOffset dx="0" dy="4" result="offset" />
+			<feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+		</filter>
+
+		<filter id="ribbonShadow">
+			<feFlood flood-opacity="0.3" flood-color="#000" result="flood" />
+			<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" />
+			<feGaussianBlur in="composite1" stdDeviation="3" result="blur" />
+			<feOffset dx="0" dy="4" result="offset" />
+			<feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+		</filter>
+
+		<clipPath id="ribbonClip">
+			<path fill="#fff" d="M 23.759766,4 C 20.69088,4 18.058398,5.4966094 16.564453,8.0996094 L 1.0722656,35.105469 c -1.42894798,2.491 -1.42894798,5.298062 0,7.789062 L 16.564453,69.900391 C 18.058398,72.503391 20.69088,74 23.759766,74 h 30.480468 c 3.068887,0 5.70137,-1.496609 7.195313,-4.099609 l 15.492187,-27.00586 c 1.428948,-2.491 1.428948,-5.298062 0,-7.789062 L 61.435547,8.0996094 C 59.941604,5.4966094 57.30912,4 54.240234,4 Z" />
+		</clipPath>
+
+	</defs>
+
+	<g>
+		<g>
+			<path fill="#d6cbef" d="M 23.759766 4 C 20.69088 4 18.058398 5.4966094 16.564453 8.0996094 L 1.0722656 35.105469 C -0.3566817 37.596469 -0.3566817 40.403531 1.0722656 42.894531 L 16.564453 69.900391 C 18.058398 72.503391 20.69088 74 23.759766 74 L 54.240234 74 C 57.309121 74 59.941604 72.503391 61.435547 69.900391 L 76.927734 42.894531 C 78.356682 40.403531 78.356682 37.596469 76.927734 35.105469 L 61.435547 8.0996094 C 59.941604 5.4966094 57.30912 4 54.240234 4 L 23.759766 4 z" />
+			<path fill="#9162fb" d="M 24.5 12 C 23.757015 12 23.135618 12.362 22.765625 13 L 8.2753906 38 C 7.9073978 38.634 7.9073978 39.366 8.2753906 40 L 22.765625 65 C 23.135618 65.638 23.807796 66 24.550781 66 L 53.449219 66 C 54.193205 66 54.864383 65.638 55.234375 65 L 69.724609 40 C 70.092601 39.366 70.092601 38.634 69.724609 38 L 55.234375 13 C 54.864383 12.362 54.193205 12 53.449219 12 L 24.5 12 z" />
+		</g>
+		<g clip-path="url(#ribbonClip)">
+			<path fill="url(#ribbonGradientLeft)" filter="url(#ribbonShadow)" d="M 10 2 L 27 36 L 51 36 L 34 2 L 10 2 z" />
+			<path fill="url(#ribbonGradientRight)" filter="url(#ribbonShadow)" d="M 44 2 L 27 36 L 51 36 L 68 2 L 44 2 z" />
+		</g>
+		<g>
+			<path fill="url(#silverGradient1)" filter="url(#medalShadowOutside)" d="M 39 18 C 27.402 18 18 27.402 18 39 C 18 50.598 27.402 60 39 60 C 50.598 60 60 50.598 60 39 C 60 27.402 50.598 18 39 18 z" />
+			<path fill="url(#silverGradient2)" filter="url(#medalShadowInside)" d="M 39 22 C 29.611 22 22 29.611 22 39 C 22 48.389 29.611 56 39 56 C 48.389 56 56 48.389 56 39 C 56 29.611 48.389 22 39 22 z" />
+			<path fill="url(#silverGradient1)" d="M 39 26 A 13 13.000172 0 0 0 26 39 A 13 13.000172 0 0 0 39 52 A 13 13.000172 0 0 0 52 39 A 13 13.000172 0 0 0 39 26 z" />
+		</g>
+	</g>
+
+</svg>
